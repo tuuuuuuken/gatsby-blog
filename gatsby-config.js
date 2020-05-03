@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://blog-tuuuuuuken.netlify.app/`,
     social: {
       twitter: `_tuuuuuuken`,
-      github: ``,
+      github: `tuuuuuuken`,
     },
   },
   plugins: [
