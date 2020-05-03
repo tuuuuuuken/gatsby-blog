@@ -8,6 +8,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { GoMarkGithub } from "react-icons/go"
+import { AiOutlineTwitter } from "react-icons/ai"
 
 import { rhythm } from "../utils/typography"
 
@@ -57,10 +59,14 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
+        <strong>{author.name}</strong> {author.summary}
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+          <AiOutlineTwitter />
+        </a>
+        {` `}
+        <a href={`https://github.com/${social.github}`}>
+          <GoMarkGithub />
         </a>
       </p>
     </div>
